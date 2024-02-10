@@ -69,7 +69,7 @@ def make_instance(n, p):
         lamb_opt = np.sqrt(2 * B * (1 + np.log(n))/n)
     else:
         theta[k] = 1.0
-        lamb_opt = np.sqrt((2/np.sqrt(n)) * (1 + (1 - p/2) * np.log(n)))
+        lamb_opt = np.sqrt((2/np.sqrt(n)) * (1 + (1 - p/4) * np.log(n)))
     # optimal threshold for stols 
     return X, theta, lamb_opt
 
